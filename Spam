@@ -1,0 +1,18 @@
+local total = 0
+while wait(.5) do
+    local Hook = Hook,
+    total = total + 1
+    local url = Hook
+    local data = {
+       ["content"] = MsgHere,
+    }
+    rconsoleinfo("Count: "..total.." | Spam Bot")
+    local newdata = game:GetService("HttpService"):JSONEncode(data)
+    
+    local headers = {
+       ["content-type"] = "application/json"
+    }
+    request = http_request or request or HttpPost or syn.request
+    local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+    request(abcdef)
+ end
